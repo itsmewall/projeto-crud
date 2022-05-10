@@ -1,7 +1,11 @@
 const express = require('express')
 const path = require('path')
+const db = require('./database')
 
 const app = express()
+
+//conexão com o banco de dados
+db.connect()
 
 //definindo o template engine
 app.set('view engine', 'ejs')
@@ -22,9 +26,9 @@ app.get('/', (req, res) => {
 
 // 404 error (not found)
 app.use((req, res) => { //middleware
-res.send('Página não enccontrada!')    
+res.send('Página não encontrada!')    
 })
 
 //exportando o servidor
-const port = process.envPORT || 8080
+const port = process.env.PORT || 8080
 app.listen(port, () => console.log(`Server is listening on port ${port}`))
