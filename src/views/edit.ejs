@@ -10,7 +10,7 @@
             <%= message%>
         <% } %>
 
-    <form action="/edit/<%= user._id %>" method="POST">
+    <form class="form" action="/edit/<%= user._id %>" method="POST">
         <div>
             <label></label>
             <input type="text" name="name" placeholder="Digite seu nome" value="<%= user.name %>">

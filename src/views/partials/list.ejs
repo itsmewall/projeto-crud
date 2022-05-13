@@ -2,15 +2,16 @@
 <html lang="pt-br">
     <%- include('partials/head.ejs') %>
 <body>
-    <h1><%= title %></h1>
+    <h1 class="title"><%= title %></h1>
 
     <%- include('partials/navbar.ejs') %>
 
 
-    <ul>
+    <ul class="list">
         <% users.forEach((user) => { %>
-            <li>
-                <%= user.name %> - <%= user.email %> - Idade: <%= user.age %>
+            <li class="list_item">
+                <%= user.name %>: <%= user.email %>
+                Idade: <%= user.age %>
                 <a href="#">[editar]</a>
             </li>
         <% }) %>

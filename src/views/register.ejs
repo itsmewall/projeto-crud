@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <%- include('partials/head.ejs') %>
     <body>
-        <h1><%= title %></h1>
+        <h1 class="title"><%= title %></h1>
 
         <%- include('partials/navbar.ejs') %>
 
@@ -10,24 +10,24 @@
             <%= message%>
         <% } %>
 
-    <form action="/register/add" method="POST">
+    <form class="form" action="/register/add" method="POST">
         <div>
             <label></label>
-            <input type="text" name="name" placeholder="Digite seu nome">
+            <input class="input" type="text" name="name" placeholder="Digite seu nome">
         </div>
         <div>
             <label></label>
-            <input type="text" name="age" placeholder="Digite sua idade">
+            <input class="input" type="text" name="age" placeholder="Digite sua idade">
         </div>
         <div>
             <label></label>
-            <input type="text" name="email" placeholder="digite seu e-mail">
+            <input class="input" type="text" name="email" placeholder="digite seu e-mail">
         </div>
         <div>
             <label></label>
-            <input type="password" name="password" placeholder="digite sua senha">
+            <input class="input" type="password" name="password" placeholder="digite sua senha">
         </div>
-        <button type="submit">Cadastrar</button>
+        <button class="button" type="submit">Cadastrar</button>
     </form>
 
     <script src="js/main.js"></script>
