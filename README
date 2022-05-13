@@ -1,0 +1,21 @@
+PROJETO CRUD (v1.0) 13/05/2022
+
+Projeto com o intuito de colocar em prática conhecimentos de: 
+I. JavaScript;
+II. NodeJS;
+III. GIT;
+IV. Banco de dados; e
+V. Lógicca de programação.
+
+Módulos utilizados:
+I. nodemon;
+II. BCrypt;
+III. EJS;
+IV. Express; e
+V. Mongoose.
+
+O projeto conta com rotas, controllers, models, o database e os views.
+Utilizou-se EJS para integração e construção de um código limpo.
+Estilização das páginas feitas no CSS de forma simples, pois não é o intuito do projeto.
+
+Todos os commits mostram o decorrer da produção e o fluxo do trabalho.
